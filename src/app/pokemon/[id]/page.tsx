@@ -7,13 +7,18 @@ interface PokemonIdProps {
   };
 }
 
-export default async function About({ params }: PokemonIdProps) {
+export default async function Pokemon({ params }: PokemonIdProps) {
   const getPokemonID = await getPokemon(params);
+
+  const { PokemonData, statsPokemonData } = getPokemonID;
 
   return (
     <div>
-      <p>Nome: {getPokemonID.PokemonData[0].name}</p>
-      <CardPokemon />
+      <p>Nome: {PokemonData[0].name}</p>
+      <CardPokemon
+        pokemonData={PokemonData[0]}
+        statsPokemonData={statsPokemonData}
+      />
     </div>
   );
 }
