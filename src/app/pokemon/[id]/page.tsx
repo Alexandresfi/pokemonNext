@@ -13,12 +13,9 @@ export default async function Pokemon({ params }: PokemonIdProps) {
   const { PokemonData, statsPokemonData } = getPokemonID;
 
   return (
-    <div>
-      <p>Nome: {PokemonData[0].name}</p>
-      <CardPokemon
-        pokemonData={PokemonData[0]}
-        statsPokemonData={statsPokemonData}
-      />
-    </div>
+    <CardPokemon
+      pokemonData={PokemonData[0]}
+      statsPokemonData={statsPokemonData}
+    />
   );
 }

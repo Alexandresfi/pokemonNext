@@ -1,21 +1,21 @@
-import { FunctionComponent, DialogHTMLAttributes, useState } from 'react';
+import { FunctionComponent, DialogHTMLAttributes } from 'react';
 
 interface DialogProps extends DialogHTMLAttributes<HTMLDialogElement> {
-  toggleTypeInput: Function;
+  toggletypeinput: Function;
   checked: string;
 }
 
 export const Modal: FunctionComponent<DialogProps> = (props) => {
   const { ...otherProps } = props;
 
-  const handleToggleTypeInput = (value: string) => {
-    props.toggleTypeInput(value);
+  const handletoggletypeinput = (value: string) => {
+    props.toggletypeinput(value);
   };
 
   return (
     <dialog
       {...otherProps}
-      className="absolute h-40 w-36 bg-primary top-28 left-[-300px] lg:top-20 lg:left-[-400px] py-2 shadow-[0px_3px_12px_3px_rgba(0,0,0,0.2)] rounded-xl"
+      className="absolute h-40 w-36 bg-primary top-16 left-[55%] sm:left-[80%] py-2 shadow-[0px_3px_12px_3px_rgba(0,0,0,0.2)] rounded-xl"
     >
       <h3 className=" w-full py-4 text-white font-bold">Sort by:</h3>
 
@@ -23,7 +23,7 @@ export const Modal: FunctionComponent<DialogProps> = (props) => {
         <label
           htmlFor="number"
           onClick={() => {
-            handleToggleTypeInput('number');
+            handletoggletypeinput('number');
           }}
           className="flex items-center gap-2 text-[10px] leading-4 "
         >
@@ -40,7 +40,7 @@ export const Modal: FunctionComponent<DialogProps> = (props) => {
         <label
           htmlFor="text"
           onClick={() => {
-            handleToggleTypeInput('text');
+            handletoggletypeinput('text');
           }}
           className="flex items-center gap-2 text-[10px] leading-4"
         >

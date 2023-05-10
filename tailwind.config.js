@@ -37,6 +37,11 @@ module.exports = {
         blackdarck: '#1D1D1D',
         bordercolor: '#E0E0E0'
       }
+    },
+    fontSize: {
+      100: ['8px', '12px'],
+      200: ['10px', '16px'],
+      300: ['14px', '16px']
     }
   },
   plugins: []
