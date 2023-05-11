@@ -13,7 +13,7 @@ export interface PokeProps {
   url: string;
 }
 async function getListPokemons() {
-  const limitPokemon = '?limit=111set20';
+  const limitPokemon = '?limit=111';
   const response = await fetch(
     `https://pokeapi.co/api/v2/pokemon/${limitPokemon}`
   );

@@ -49,7 +49,7 @@ export const Search = () => {
         <input
           type={typeInput}
           placeholder="Search"
-          className="w-[228] h-4 lg:w-full outline-none"
+          className="w-[228px] h-4 lg:w-full outline-none"
           value={valueInput}
           onChange={(e) => handleValueInput(e.target.value)}
         />
