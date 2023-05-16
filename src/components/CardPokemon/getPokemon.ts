@@ -20,7 +20,7 @@ export interface StatsProps {
   stats: StatsPokemonProps[];
 }
 
-interface StatsPokemonProps {
+export interface StatsPokemonProps {
   base_stat: number;
   stat: {
     name: string;
