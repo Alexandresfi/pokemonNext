@@ -9,7 +9,8 @@
  
  <p> 
     Projeto concluído e hospedado, para visita-lo acesse o 
-    <a href="https://pokedev-next.vercel.app/">link</a> 
+    <a href="https://pokedev-next.vercel.app/">link</a> <br>
+     layout inspirado do figma, <a href="https://www.figma.com/file/3rb6bhlSxPhOlJwhfv9jPK/Pok%C3%A9dex-(Community)?type=design&node-id=0-1&t=LOcNJJafKYAKzjzO-0" > acesse </a>
  </p>
  
  
