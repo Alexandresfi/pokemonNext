@@ -35,7 +35,7 @@ export const Search = () => {
 
   const handlerouter = () => {
     if (valueInput !== '' && valueInput !== ' ') {
-      router.push(`/pokemon/${valueInput}`);
+      router.push(`/pokemon/${valueInput.toLocaleLowerCase()}`);
     }
   };
 
