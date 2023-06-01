@@ -34,8 +34,7 @@ export const Search = () => {
   };
 
   const handlerouter = () => {
-    if (valueInput === '') {
-    } else {
+    if (valueInput !== '' && valueInput !== ' ') {
       router.push(`/pokemon/${valueInput}`);
     }
   };

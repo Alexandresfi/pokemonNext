@@ -6,7 +6,7 @@ import { Search } from '../Search';
 
 export const Header = () => {
   return (
-    <header className="h-[100px] lg:w-full lg:h-auto bg-primary pt-4 pl-4 pb-6 flex items-start gap-2 flex-col lg:flex-row lg:gap-12 lg:items-center relative ">
+    <header className="h-[100px] lg:w-full lg:h-auto bg-primary pt-4 pl-4 pb-6 flex items-start gap-2 flex-col lg:flex-row lg:gap-12 lg:items-center sticky top-0">
       <Link href={'/'} className="flex justify-start items-center gap-4">
         <Image
           src={Pokeball}
