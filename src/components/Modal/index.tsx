@@ -1,3 +1,4 @@
+'use client';
 import { FunctionComponent, DialogHTMLAttributes } from 'react';
 
 interface DialogProps extends DialogHTMLAttributes<HTMLDialogElement> {
