@@ -1,3 +1,4 @@
+'use client';
 import Image from 'next/image';
 
 import IconWeight from '../../../assets/icons/icon-weight.png';
