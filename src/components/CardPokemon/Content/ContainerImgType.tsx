@@ -12,8 +12,8 @@ export function ContainerImgType({ pokemonData }: Props) {
   return (
     <div className="absolute text-center bottom-[336px] right-0 left-0 ">
       <Image
-        src={pokemonData.sprite}
-        alt={pokemonData.name}
+        src={pokemonData?.sprite}
+        alt={pokemonData?.name}
         priority={true}
         quality={30}
         width={200}
@@ -21,7 +21,7 @@ export function ContainerImgType({ pokemonData }: Props) {
         className="m-auto"
       />
       <div className="w-[360px] m-auto flex items-center justify-center gap-4">
-        {pokemonData.types.map((item, index) => (
+        {pokemonData?.types.map((item, index) => (
           <span
             className={`${bgColor(
               item.toLowerCase()

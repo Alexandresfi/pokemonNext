@@ -15,7 +15,7 @@ export function InfoStats({
     <div className=" m-auto">
       <p
         className={`font-bold mb-1 mx-auto ${textColor(
-          pokemonDataType.toLowerCase()
+          pokemonDataType?.toLowerCase()
         )} text-center text-300`}
       >
         Base Stats
@@ -23,11 +23,11 @@ export function InfoStats({
 
       <div className="flex items-center gap-4 w-[300px] m-auto">
         <ul className=" pr-10 border-r-2 border-r-bordercolor w-[31px]">
-          {statsPokemonData.stats.map((item, index) => (
+          {statsPokemonData?.stats.map((item, index) => (
             <li
               key={index}
               className={`font-bold mb-1 mx-auto ${textColor(
-                pokemonDataType.toLowerCase()
+                pokemonDataType?.toLowerCase()
               )} text-left text-200`}
             >
               <span>{abbreviations(item.stat.name)}</span>
@@ -35,7 +35,7 @@ export function InfoStats({
           ))}
         </ul>
         <ul className="w-full">
-          {statsPokemonData.stats.map((item, index) => (
+          {statsPokemonData?.stats.map((item, index) => (
             <li key={index} className="flex items-center mb-1">
               <label
                 htmlFor="stat"
@@ -47,12 +47,12 @@ export function InfoStats({
               <div className=" relative">
                 <div
                   className={`w-[209px] h-1 rounded opacity-20 ${bgColor(
-                    pokemonDataType.toLowerCase()
+                    pokemonDataType?.toLowerCase()
                   )}`}
                 ></div>
                 <div
                   className={`h-1 rounded opacity-100 absolute top-0 ${bgColor(
-                    pokemonDataType.toLowerCase()
+                    pokemonDataType?.toLowerCase()
                   )} max-w-full`}
                   style={{ width: `${item.base_stat}%` }}
                 ></div>
