@@ -1,3 +1,4 @@
+'use client';
 import { abbreviations, bgColor, textColor } from '../../utils';
 import { StatsProps } from '../getPokemon';
 

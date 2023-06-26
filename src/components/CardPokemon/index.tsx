@@ -1,3 +1,4 @@
+'use client';
 import { StatsProps, PokemonDataProps } from '../CardPokemon/getPokemon';
 
 import { InfoStats } from './Content/InfoStats';
