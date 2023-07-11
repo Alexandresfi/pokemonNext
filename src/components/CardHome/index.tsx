@@ -18,6 +18,7 @@ export const CarHome = ({ pokemon }: Props) => {
   return (
     <Link
       className="flex flex-col justify-center items-center p-1"
+      prefetch={false}
       href={`/pokemon/${id}`}
     >
       <div className="self-end text-xs text-grayscale pt-1 pr-2">
