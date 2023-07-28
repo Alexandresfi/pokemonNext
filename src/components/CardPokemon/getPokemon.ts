@@ -29,9 +29,13 @@ export interface StatsPokemonProps {
 
 export async function getPokemon(props: Props) {
   const [pokemon, statsPokemon] = await Promise.all([
-    fetch(`https://pokeapi.glitch.me/v1/pokemon/${props.id}`),
+    fetch(`https://pokeapi.glitch.me/v1/pokemon/${props.id}`, {
+      cache: 'no-store'
+    }),
 
-    fetch(`https://pokeapi.co/api/v2/pokemon/${props.id}`)
+    fetch(`https://pokeapi.co/api/v2/pokemon/${props.id}`, {
+      cache: 'no-store'
+    })
   ]);
   const PokemonData: PokemonDataProps[] = await pokemon.json();
   const statsPokemonData: StatsProps = await statsPokemon.json();
